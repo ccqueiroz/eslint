@@ -38,7 +38,7 @@
 #### 2.2. Add the .prettier command in the package.json scripts
 <pre>
 {
-    "create-prettier-config": "node ./node_modules/@caiocezarqueiroz/eslint-config/settingsGenerator/prettier/index.js""
+    "create-prettier-config": "node ./node_modules/@caiocezarqueiroz/eslint-config/settingsGenerator/prettier/index.js"
 }
 </pre>
 #### 2.3. Run the .editorconfig command in the terminal with npm or yarn.
@@ -76,7 +76,7 @@
 #### 4.1. Add the .editorconfig command in the package.json scripts.
 <pre>
 {
-    "create-editor-config": "node ./node_modules/@caiocezarqueiroz/eslint-config/settingsGenerator/editorconfig/index.js""
+    "create-editor-config": "node ./node_modules/@caiocezarqueiroz/eslint-config/settingsGenerator/editorconfig/index.js"
 }
 </pre>
 #### 4.2. Run the .editorconfig command in the terminal with npm or yarn.
