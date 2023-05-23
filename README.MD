@@ -20,11 +20,11 @@
 ### 1. Install the dependencies
 
 <pre>
-    npm install eslint @@caiocezarqueiroz/eslint-config --save-dev
+    npm install eslint @caiocezarqueiroz/eslint-config --save-dev
 
     or
 
-    yarn add eslint @@caiocezarqueiroz/eslint-config -D
+    yarn add eslint @caiocezarqueiroz/eslint-config -D
 </pre>
 
 ### 2. To use the eslint
