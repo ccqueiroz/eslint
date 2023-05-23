@@ -28,7 +28,7 @@
     yarn add eslint jest @types/jest @caiocezarqueiroz/eslint-config -D
 </pre>
 
-### 2. To use the <strong>eslint</strong> and <strong>prettier</strong>
+### 2. To use the <code>eslint</code> and <code>prettier</code>
 #### 2.1. Create a <code>.eslintrc.json</code> file extending the config:
 <pre>
 {
@@ -53,7 +53,7 @@
 </pre>
 
 
-### 3. To use <strong>vscode workspace</strong> settings
+### 3. To use <code>vscode workspace</code> settings
 #### 3.1. Add the <code>create-workspace-vscode</code> command in the package.json scripts.
 <pre>
 {
@@ -72,7 +72,7 @@
 </pre>
 
 
-### 4. To use <strong>.editorconfig</strong> settings
+### 4. To use <code>.editorconfig</code> settings
 #### 4.1. Add the <code>.editorconfig</code> command in the package.json scripts.
 <pre>
 {
