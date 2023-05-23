@@ -13,6 +13,7 @@
     <li>Prettier</li>
     <li>Jest recommended</li>
     <li>Vscode workspace settings for code formatting</li>
+    <li>Editorconfig settings</li>
 </ul>
 
 ## How to use?
@@ -20,11 +21,11 @@
 ### 1. Install the dependencies
 
 <pre>
-    npm install eslint @caiocezarqueiroz/eslint-config --save-dev
+    npm install eslint jest @types/jest @caiocezarqueiroz/eslint-config --save-dev
 
     or
 
-    yarn add eslint @caiocezarqueiroz/eslint-config -D
+    yarn add eslint jest @types/jest @caiocezarqueiroz/eslint-config -D
 </pre>
 
 ### 2. To use the eslint
@@ -50,6 +51,25 @@
     or
 
     yarn create-workspace-vscode
+}
+</pre>
+
+
+### 4. To use .editorconfig settings
+#### 4.1. Add the .editorconfig command in the package.json scripts.
+<pre>
+{
+    "create-editor-config": "node ./node_modules/@caiocezarqueiroz/eslint-config/editor-config.js"
+}
+</pre>
+#### 3.2. Run the .editorconfig command in the terminal with npm or yarn.
+<pre>
+{
+    npm run create-editor-config
+
+    or
+
+    yarn create-editor-config
 }
 </pre>
 
