@@ -1,52 +1,56 @@
 module.exports = {
+  root: true,
   env: {
     es2021: true,
     node: true,
     jest: true,
   },
-  parser: '@typescript-eslint/parser',
+  parser: "@typescript-eslint/parser",
   extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:jest/recommended',
-    'prettier',
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:jest/recommended",
+    "prettier",
   ],
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
+    ecmaVersion: "latest",
+    sourceType: "module",
   },
-  plugins: ['@typescript-eslint', 'prettier'],
+  plugins: ["@typescript-eslint", "prettier"],
   rules: {
-    'prettier/prettier': [
-      'error',
+    "prettier/prettier": [
+      "error",
       {
         printWidth: 80,
         tabWidth: 2,
         singleQuote: true,
-        trailingComma: 'all',
-        arrowParens: 'always',
+        trailingComma: "all",
+        arrowParens: "always",
         semi: true,
       },
     ],
-    'no-var': 'error',
-    'no-console': 'error',
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-    'import/extensions': [
-      'error',
-      'ignorePackages',
+    "no-var": "error",
+    "no-console": "error",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
       {
-        ts: 'never',
+        ts: "never",
       },
     ],
   },
   settings: {
-    'import/parsers': {
-      [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
+    "import/parsers": {
+      [require.resolve("@typescript-eslint/parser")]: [".ts", ".tsx", ".d.ts"],
     },
-    'import/resolver': {
+    "import/resolver": {
       typescript: {},
+      node: {
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
     },
   },
 };
