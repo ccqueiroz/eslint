@@ -1,5 +1,6 @@
-const { writeFileSync } = require("node:fs");
-const _PATH_FOLDER = ".editorconfig";
+/* eslint-disable no-console */
+const { writeFileSync } = require('node:fs');
+const _PATH_FOLDER = `${process.cwd()}/.editorconfig`;
 const _DEFAULT_CONFIGS_EDITOR_CONFIG = `
 root = true
 
@@ -16,8 +17,8 @@ trim_trailing_whitespace = true
   try {
     //creates the .editorconfig file at the root of the project
     writeFileSync(_PATH_FOLDER, _DEFAULT_CONFIGS_EDITOR_CONFIG);
-    console.log("Arquivo .editorconfig criado com sucesso.");
+    console.log('Arquivo .editorconfig criado com sucesso.');
   } catch (err) {
-    console.error("Erro ao criar o arquivo .editorconfig:", err);
+    console.error('Erro ao criar o arquivo .editorconfig:', err);
   }
 })();
