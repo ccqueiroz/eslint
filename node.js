@@ -4,13 +4,20 @@ module.exports = {
     node: true,
     jest: true,
   },
-  extends: ['standard', 'plugin:prettier/recommended'],
   parser: '@typescript-eslint/parser',
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:jest/recommended',
+    'prettier',
+  ],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'prettier'],
   rules: {
     'prettier/prettier': [
       'error',
@@ -20,13 +27,26 @@ module.exports = {
         singleQuote: true,
         trailingComma: 'all',
         arrowParens: 'always',
-        semi: false,
+        semi: true,
+      },
+    ],
+    'no-var': 'error',
+    'no-console': 'error',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        ts: 'never',
       },
     ],
   },
   settings: {
     'import/parsers': {
       [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
+    },
+    'import/resolver': {
+      typescript: {},
     },
   },
 };
