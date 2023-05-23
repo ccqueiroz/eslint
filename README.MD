@@ -17,31 +17,41 @@
 
 ## How to use?
 
-1. Install the dependencies
+### 1. Install the dependencies
 
 <pre>
     npm install eslint @@caiocezarqueiroz/eslint-config --save-dev
-</pre>
 
-or
+    or
 
-<pre>
     yarn add eslint @@caiocezarqueiroz/eslint-config -D
 </pre>
 
-2. To use the eslint
-2.1. Create a <code>.eslintrc.json</code> file extending the config:
+### 2. To use the eslint
+#### 2.1. Create a <code>.eslintrc.json</code> file extending the config:
 <pre>
 {
     "extends": "@caiocezarqueiroz/eslint-config/node.js"
 }
 </pre>
 
-3. To use vscode workspace settings
-3.1. Create <code>.vscode/settings.json</code> folder extending the config:
+### 3. To use vscode workspace settings
+#### 3.1. Add the create-workspace-vscode command in the package.json scripts.
 <pre>
 {
-    "extends": "@caiocezarqueiroz/eslint-config/settings-vscode.js"
+    "create-workspace-vscode": "node ./node_modules/@caiocezarqueiroz/eslint-config/settings-vscode.js"
 }
 </pre>
+#### 3.2. Run the create-workspace-vscode command in the terminal with npm or yarn.
+<pre>
+{
+    npm run create-workspace-vscode
+
+    or
+
+    yarn create-workspace-vscode
+}
+</pre>
+
+
 
