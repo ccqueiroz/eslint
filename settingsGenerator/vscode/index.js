@@ -11,7 +11,6 @@ const _DEFAULT_CONFIGS_WORKSPACE = {
     node_modules: true,
   },
   'workbench.settings.editor': 'json',
-  teste: true,
 };
 
 (() => {
