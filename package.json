@@ -1,6 +1,6 @@
 {
   "name": "@caiocezarqueiroz/eslint-config",
-  "version": "1.0.7",
+  "version": "1.0.11",
   "main": "index.js",
   "author": "Caio Queiroz",
   "license": "MIT",
@@ -9,7 +9,7 @@
     "typescript": ">=3.3.1"
   },
   "scripts": {
-    "create-workspace-vscode": "node ./settings-vscode.js"
+    "create-workspace-vscode": "node ./settingsGenerator/vscode/index.js"
   },
   "peerDependenciesMeta": {
     "typescript": {
@@ -30,6 +30,7 @@
   "devDependencies": {
     "@types/jest": "^29.5.1",
     "jest": "^29.5.0",
+    "js-yaml": "^4.1.0",
     "typescript": "^5.0.4"
   }
 }

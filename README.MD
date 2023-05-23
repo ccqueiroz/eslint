@@ -28,19 +28,36 @@
     yarn add eslint jest @types/jest @caiocezarqueiroz/eslint-config -D
 </pre>
 
-### 2. To use the eslint
+### 2. To use the eslint and prettier
 #### 2.1. Create a <code>.eslintrc.json</code> file extending the config:
 <pre>
 {
-    "extends": "@caiocezarqueiroz/eslint-config/node.js"
+    "extends": "@caiocezarqueiroz/eslint-config/settingsGenerator/eslint/node.js"
 }
 </pre>
+#### 2.2. Add the .prettier command in the package.json scripts
+<pre>
+{
+    "create-prettier-config": "node ./node_modules/@caiocezarqueiroz/eslint-config/settingsGenerator/prettier/index.js""
+}
+</pre>
+#### 2.3. Run the .editorconfig command in the terminal with npm or yarn.
+<pre>
+{
+    npm run create-prettier-config
+
+    or
+
+    yarn create-prettier-config
+}
+</pre>
+
 
 ### 3. To use vscode workspace settings
 #### 3.1. Add the create-workspace-vscode command in the package.json scripts.
 <pre>
 {
-    "create-workspace-vscode": "node ./node_modules/@caiocezarqueiroz/eslint-config/settings-vscode.js"
+    "create-workspace-vscode": "node ./node_modules/@caiocezarqueiroz/eslint-config/settingsGenerator/vscode/index.js"
 }
 </pre>
 #### 3.2. Run the create-workspace-vscode command in the terminal with npm or yarn.
@@ -59,10 +76,10 @@
 #### 4.1. Add the .editorconfig command in the package.json scripts.
 <pre>
 {
-    "create-editor-config": "node ./node_modules/@caiocezarqueiroz/eslint-config/editor-config.js"
+    "create-editor-config": "node ./node_modules/@caiocezarqueiroz/eslint-config/settingsGenerator/editorconfig/index.js""
 }
 </pre>
-#### 3.2. Run the .editorconfig command in the terminal with npm or yarn.
+#### 4.2. Run the .editorconfig command in the terminal with npm or yarn.
 <pre>
 {
     npm run create-editor-config
