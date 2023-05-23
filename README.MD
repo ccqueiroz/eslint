@@ -28,20 +28,20 @@
     yarn add eslint jest @types/jest @caiocezarqueiroz/eslint-config -D
 </pre>
 
-### 2. To use the eslint and prettier
+### 2. To use the <strong>eslint</strong> and <strong>prettier</strong>
 #### 2.1. Create a <code>.eslintrc.json</code> file extending the config:
 <pre>
 {
     "extends": "@caiocezarqueiroz/eslint-config/settingsGenerator/eslint/node.js"
 }
 </pre>
-#### 2.2. Add the .prettier command in the package.json scripts
+#### 2.2. Add the <code>.prettier</code> command in the package.json scripts
 <pre>
 {
     "create-prettier-config": "node ./node_modules/@caiocezarqueiroz/eslint-config/settingsGenerator/prettier/index.js"
 }
 </pre>
-#### 2.3. Run the .editorconfig command in the terminal with npm or yarn.
+#### 2.3. Run the <code>.prettier</code> command in the terminal with npm or yarn.
 <pre>
 {
     npm run create-prettier-config
@@ -53,14 +53,14 @@
 </pre>
 
 
-### 3. To use vscode workspace settings
-#### 3.1. Add the create-workspace-vscode command in the package.json scripts.
+### 3. To use <strong>vscode workspace</strong> settings
+#### 3.1. Add the <code>create-workspace-vscode</code> command in the package.json scripts.
 <pre>
 {
     "create-workspace-vscode": "node ./node_modules/@caiocezarqueiroz/eslint-config/settingsGenerator/vscode/index.js"
 }
 </pre>
-#### 3.2. Run the create-workspace-vscode command in the terminal with npm or yarn.
+#### 3.2. Run the <code>create-workspace-vscode</code> command in the terminal with npm or yarn.
 <pre>
 {
     npm run create-workspace-vscode
@@ -72,14 +72,14 @@
 </pre>
 
 
-### 4. To use .editorconfig settings
-#### 4.1. Add the .editorconfig command in the package.json scripts.
+### 4. To use <strong>.editorconfig</strong> settings
+#### 4.1. Add the <code>.editorconfig</code> command in the package.json scripts.
 <pre>
 {
     "create-editor-config": "node ./node_modules/@caiocezarqueiroz/eslint-config/settingsGenerator/editorconfig/index.js"
 }
 </pre>
-#### 4.2. Run the .editorconfig command in the terminal with npm or yarn.
+#### 4.2. Run the <code>.editorconfig</code> command in the terminal with npm or yarn.
 <pre>
 {
     npm run create-editor-config
