@@ -1,6 +1,6 @@
 {
   "name": "@caiocezarqueiroz/eslint-config",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "main": "index.js",
   "author": "Caio Queiroz",
   "license": "MIT",
@@ -29,5 +29,25 @@
     "jest": "^29.5.0",
     "js-yaml": "^4.1.0",
     "typescript": "^5.0.4"
-  }
+  },
+  "description": "The package @caiocezarqueiroz/eslint-config offers default ESLint configurations, integration with Prettier, EditorConfig, and the VSCode workspace, thus simplifying the development process and ensuring code consistency and compliance with best programming practices.",
+  "keywords": [
+    "ESLint",
+    "Configurações de ESLint",
+    "ESLint configurations",
+    "Prettier",
+    ".prettier",
+    ".editorconfig",
+    "Workspace do VSCode",
+    "Desenvolvimento de código",
+    "Code development",
+    "Padronização de código",
+    "Code standardization",
+    "Melhores práticas de desenvolvimento",
+    "Best development practices",
+    "Otimização de código",
+    "Code optimization",
+    "Ferramentas de desenvolvimento",
+    "Development tools"
+  ]
 }
