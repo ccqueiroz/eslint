@@ -33,7 +33,7 @@ const _DEFAULT_CONFIGS_WORKSPACE = {
   }
   try {
     const settingsJSON = JSON.stringify(settings);
-    //
+    //checks if the .vscode folder created in the root of the project already exists.
     if (!hasExistFile) {
       if (!existsSync(_PATH_FOLDER.replace('/settings.json', ''))) {
         mkdirSync(_PATH_FOLDER.replace('/settings.json', ''));
