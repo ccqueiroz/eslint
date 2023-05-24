@@ -23,7 +23,7 @@ const _DEFAULT_CONFIGS_WORKSPACE = {
     if (Object.prototype.hasOwnProperty.call(settings, key)) {
       if (typeof _DEFAULT_CONFIGS_WORKSPACE[key] !== 'string') {
         for (const keyChild in _DEFAULT_CONFIGS_WORKSPACE[key]) {
-          if (Object.prototype.hasOwnProperty.call(!settings[key], keyChild)) {
+          if (!Object.prototype.hasOwnProperty.call(settings[key], keyChild)) {
             settings[key][keyChild] = _DEFAULT_CONFIGS_WORKSPACE[key][keyChild];
           }
         }
