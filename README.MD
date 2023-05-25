@@ -1,10 +1,9 @@
-## ESLINT Config
+# ESLINT Config
 
 ![npm](https://img.shields.io/npm/v/@caiocezarqueiroz/eslint-config)
-
 [![License](https://img.shields.io/github/license/ccqueiroz/eslint)](LICENSE)
 [![Repository](https://img.shields.io/badge/repository-GitHub-blue.svg)](https://github.com/ccqueiroz/eslint)
-
+[![npm downloads](https://img.shields.io/npm/dw/@caiocezarqueiroz/eslint-config)](https://npm-stat.com/charts.html?package=eslint-config)
 
 ## Default configs
 <ul>

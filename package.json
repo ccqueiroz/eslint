@@ -1,6 +1,6 @@
 {
   "name": "@caiocezarqueiroz/eslint-config",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "main": "index.js",
   "author": "Caio Queiroz",
   "license": "MIT",
@@ -49,5 +49,9 @@
     "Code optimization",
     "Ferramentas de desenvolvimento",
     "Development tools"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ccqueiroz/eslint"
+  }
 }
