@@ -29,10 +29,12 @@ module.exports = {
         trailingComma: 'all',
         arrowParens: 'always',
         semi: true,
+        endOfLine: 'auto',
       },
     ],
     'no-var': 'error',
     'import/no-named-export': 'off',
+    'linebreak-style': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'import/extensions': [
       'error',

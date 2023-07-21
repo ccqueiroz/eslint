@@ -10,6 +10,7 @@ const _DEFAULT_CONFIGS_PRETTIER = {
   trailingComma: 'all',
   arrowParens: 'always',
   semi: true,
+  endOfLine: 'auto',
 };
 
 (() => {
